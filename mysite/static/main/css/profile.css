@@ -1,0 +1,48 @@
+html{
+    height: 100%;
+    display: flex;
+flex-direction: column;
+justify-items: center;
+align-items: center;
+margin: 0px;
+padding: 0px;
+}
+
+body{
+color:rgb(255, 255, 255);
+background-color:#524f4f;
+font-size: 24px;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-items: center;
+align-items: center;
+}
+
+.home:hover{
+    color: rgba(199, 196, 32, 0.6);
+    text-decoration:none;
+    transform:scale(2, 2);
+    font-size:  48px;
+}
+ul{
+    font-size: 24px;
+    list-style-type: none;
+    background-color: rgb(93, 89, 89);
+    width: 70%;
+    height: 70%;
+ }
+
+ ul li:hover, aside ul a:hover{
+    color:#ffeb0d;
+    text-decoration:none;
+    transform:scale(1);
+}
+a{    color:rgb(255, 255, 255);
+    text-decoration:none;}
+a:hover{
+    color:rgb(0, 0, 255);
+    text-decoration:none;
+    transform:scale(1);
+}

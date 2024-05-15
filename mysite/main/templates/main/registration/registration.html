@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+<body>
+<div id="wrapper">
+<form id="signin" method="POST">
+    {% csrf_token %}
+    <input type ="text" id ="username" name = "username" placeholder="юзернейм">
+    <input type ="password" id = "password" name = "password" placeholder="пароль">
+    <input type="text" id="again_password" name="again_password" placeholder="повторите пароль">
+    <input type ="text" id = "github" name = "github" placeholder ="ссылка на гитхаб">
+    <input type ="text" id = "tg" name ="tg" placeholder="никнейм в телеграмме">
+    {{error}}
+    <button type="submit" >&#xf0da;</button>
+</form>
+</div>
+</body>
+</html>

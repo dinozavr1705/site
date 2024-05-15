@@ -1,0 +1,17 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/button.css' %}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST">
+    <input type="text" id="user" name="new_username" placeholder="новый юзернейм">
+    {% csrf_token %}
+    <button class="glow-on-hover" type="submit">ввести</button>
+        </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.body{
+background:#524f4f;
+}
+aside{
+float:left;
+background:#181818;
+width:30%;
+padding:2.5%;
+height:120vh;
+color:white;
+border-right: 5px solid grey;
+}
+aside ul{list-style:none}
+aside ul li{
+color:white;
+display:block;
+margin-top:20px;}
+aside ul li:hover, aside ul a:hover{
+color:#e5959;
+text-decoration:none;
+transform:scale(1.2)}

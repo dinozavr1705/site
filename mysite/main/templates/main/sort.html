@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>сортировка</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/button.css' %}">
+</head>
+<body>
+<div id = "wrapper">
+<form method="POST" id = "signin">
+    <input type="text" id="user" name="cryteries" placeholder="критерии">
+    {% csrf_token %}
+    <input type="radio" name="Subject"  value="юзернейм" >
+    <input type="radio" name="Subject"  value="скилы">
+    <button class="glow-on-hover" type="submit">ввести</button>
+       </form>
+</div>
+</body>
+</html>

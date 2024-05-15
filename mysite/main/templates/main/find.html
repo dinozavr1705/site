@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>password change</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/button.css' %}">
+</head>
+<body>
+<div id = "wrapper">
+<form method="POST" id = "signin">
+    <input type="text" id="pass" name="username" placeholder="найти">
+    {% csrf_token %}
+    <button class="glow-on-hover" type="submit">найти</button>
+       </form>
+</div>
+</body>
+</html>

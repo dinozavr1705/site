@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block bruh %}
+{% endblock %}
+{% block foo %}
+{% if user.is_authenticated%}
+<h4>имя:{{user}}</h4>
+<article>
+    <ul>
+        <li>скилы:{{user.skills}}</li>
+    </ul>
+</article>
+{%else%}
+<a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">зарегистрироваться/войти в аккаунт</a>
+{%endif%}
+{% endblock %}

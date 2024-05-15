@@ -1,0 +1,12 @@
+{% extends 'main/layout.html' %}
+{%block foo%}
+
+    <h2>Список пользователей</h2>
+        <ul>
+            {% for user in users %}
+                <a href="{% url 'user_profile' user.id %}"><li>{{ user.username }}</a> - скилы:{{user.skills}}</li>
+                 ссылка на гитхаб: <a href = {{user.github}}>перейти</a> - ссылка на тг: <a href = {{user.tg}}>перейти</a>
+
+            {% endfor %}
+        </ul>
+{%endblock%}
